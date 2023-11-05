@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
+
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    background-color: #f8f8e2;
+}
+
+.content__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100vh;
+}
+
+.person{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 280px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.content-clip{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    top: -20px;
+    margin-bottom: 20px;
+    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98);
+    border-radius: 0 0 200px 200px;
+    -webkit-border-radius: 0 0 200px 200px;
+    -moz-border-radius: 0 0 200px 200px;
+    -ms-border-radius: 0 0 200px 200px;
+    -o-border-radius: 0 0 200px 200px;
+    transition: transform 250ms cubic-bezier(0.4,0,0.2,1), translate 200ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: transform 250ms cubic-bezier(0.4,0,0.2,1), translate 200ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: transform 250ms cubic-bezier(0.4,0,0.2,1), translate 200ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    -ms-transition: transform 250ms cubic-bezier(0.4,0,0.2,1), translate 200ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: transform 250ms cubic-bezier(0.4,0,0.2,1), translate 200ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.content-clip:hover{
+    transform: scale(1.05) translate(0px, -10px);
+    -webkit-transform: scale(1.05) translate(0px, -10px);
+    -moz-transform: scale(1.05) translate(0px, -10px);
+    -ms-transform: scale(1.05) translate(0px, -10px);
+    -o-transform: scale(1.05) translate(0px, -10px);
+}
+
+.content-clip:hover .content-img .img{
+    transform: translateY(10px) scale(1);
+    -webkit-transform: translateY(10px) scale(1);
+    -moz-transform: translateY(10px) scale(1);
+    -ms-transform: translateY(10px) scale(1);
+    -o-transform: translateY(10px) scale(1);
+    filter: drop-shadow(-5px 3px 8px rgba(0, 0, 0, 0.7));
+    -webkit-filter: drop-shadow(-5px 3px 8px rgba(0, 0, 0, 0.7));
+}
+
+.circle{
+    background-color: #fee7d3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    transition: top .5s;
+    -webkit-transition: top .5s;
+    -moz-transition: top .5s;
+    -ms-transition: top .5s;
+    -o-transition: top .5s;
+}
+
+.content-img{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    bottom: 0;
+}
+
+.img{
+    object-fit: cover;
+    bottom: 0;
+    width: inherit;
+    height: inherit;
+    /*overflow: hidden;
+    */pointer-events: none;
+    vertical-align: bottom;
+    transform: translateY(30px) scale(0.9);
+    -webkit-transform: translateY(30px) scale(0.9);
+    -moz-transform: translateY(30px) scale(0.9);
+    -ms-transform: translateY(30px) scale(0.9);
+    -o-transform: translateY(30px) scale(0.9);
+    transition: all 250ms cubic-bezier(0.53,0.22,0.12,0.87);
+    -webkit-transition: all 250ms cubic-bezier(0.53,0.22,0.12,0.87);
+    -moz-transition: all 250ms cubic-bezier(0.53,0.22,0.12,0.87);
+    -ms-transition: all 250ms cubic-bezier(0.53,0.22,0.12,0.87);
+    -o-transition: all 250ms cubic-bezier(0.53,0.22,0.12,0.87);
+}
+
+.img2{
+    position: relative;
+    top: 6px;
+}
+
+.img3{
+    position: relative;
+    top: -12px;
+}
+
+.divider{
+    background-color: #ca6060;
+    height: 1px;
+    width: 60%;
+}
+
+.name{
+    color: #404245;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.title{
+    color: #6e6e6e;
+    font-family: Arial;
+    font-size: 14px;
+    margin-top: 16px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 4px;
+}
